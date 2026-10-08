@@ -82,6 +82,10 @@ ul.feat li::before{content:"";position:absolute;left:0;top:.62em;width:7px;heigh
 .tile figcaption{position:relative;width:100%;padding:28px 10px 10px;font-weight:600;font-size:14px;line-height:1.3;color:#fff;background:linear-gradient(to top,rgba(0,0,0,.65),rgba(0,0,0,0))}
 .addr{margin:0;font-size:18px;line-height:1.5}
 .maplink{color:var(--accent);font-weight:600;width:fit-content}
+h3{margin:8px 0 0;font-family:var(--display);font-size:16px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.near{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 32px}
+.near li{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
+.near b{color:var(--accent);font-variant-numeric:tabular-nums;white-space:nowrap}
 .intro{margin:0;color:var(--muted);max-width:65ch}
 .note{color:var(--muted);font-size:15px;margin:0}
 .req{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px;display:grid;gap:10px}
@@ -96,6 +100,7 @@ ul.feat li::before{content:"";position:absolute;left:0;top:.62em;width:7px;heigh
   .specs div:nth-child(3){border-left:0}
   .specs div:nth-child(n+3){border-top:1px solid var(--line)}
   ul.feat{grid-template-columns:1fr}
+  .near{grid-template-columns:1fr}
   .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .grid3{grid-template-columns:1fr}
 }
@@ -115,7 +120,7 @@ ul.feat li::before{content:"";position:absolute;left:0;top:.62em;width:7px;heigh
   <img class="hero" src="img/almina-7-alberca-techada-jacuzzi.jpg" fetchpriority="high" alt="Alberca techada con jacuzzi en Almina 7, Lomas de los Ángeles Tetelpan">
 
 
-  <p class="intro">Se renta departamento de 122.25 m² en Almina 7, Camino Real de Minas 7, colonia Lomas de los Ángeles Tetelpan, alcaldía Álvaro Obregón, Ciudad de México. Dos recámaras con clóset y terraza, dos baños completos, cocina equipada y dos cajones de estacionamiento, en un condominio con alberca techada, jacuzzi, gimnasio, cancha de pádel y acceso con biométricos.</p>
+  <p class="intro">Se renta departamento de 122.25 m² en Almina 7, Camino Real de Minas 7, colonia Lomas de los Ángeles Tetelpan, alcaldía Álvaro Obregón, Ciudad de México. Dos recámaras con clóset y terraza, dos baños completos, cocina equipada y dos cajones de estacionamiento, en un condominio con alberca techada, jacuzzi, gimnasio, cancha de pádel y acceso con biométricos. Cerca de San Ángel, Altavista, Periférico, Santa Fe y la Supervía Poniente, con colegios como CUAM, CEAM, Asunción, Queen Elizabeth School, Alexander Bain, ITAM, Anáhuac Sur y La Salle Pedregal.</p>
 
   <div class="specs" aria-label="Ficha técnica">
     <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3h18v18H3z"/><path d="M3 9h6V3M15 21v-6h6"/></svg><strong>122.25</strong><small>m² construidos</small></div>
@@ -186,6 +191,54 @@ ul.feat li::before{content:"";position:absolute;left:0;top:.62em;width:7px;heigh
     <h2>Ubicación</h2>
     <p class="addr">Camino Real de Minas 7<br>Col. Lomas de los Ángeles Tetelpan, Álvaro Obregón, CDMX</p>
     <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Camino+Real+de+Minas+7,+Lomas+de+los+Angeles+Tetelpan,+Alvaro+Obregon,+CDMX" target="_blank" rel="noopener">Ver en Google Maps</a>
+  </section>
+
+  <section>
+    <h2>Qué hay cerca</h2>
+    <h3>Escuelas y universidades</h3>
+    <ul class="near">
+      <li><span>CUAM</span><b>3.9 km</b></li>
+      <li><span>CEAM</span><b>4.2 km</b></li>
+      <li><span>Instituto Asunción de México</span><b>5.0 km</b></li>
+      <li><span>Queen Elizabeth School</span><b>5.1 km</b></li>
+      <li><span>ITAM</span><b>5.6 km</b></li>
+      <li><span>Instituto Alexander Bain</span><b>7.5 km</b></li>
+      <li><span>Universidad Anáhuac Sur</span><b>8.0 km</b></li>
+      <li><span>Tec de Monterrey Santa Fe</span><b>8.1 km</b></li>
+      <li><span>La Salle Pedregal</span><b>9.2 km</b></li>
+    </ul>
+    <h3>Centros comerciales y servicios</h3>
+    <ul class="near">
+      <li><span>Walmart Calz. de las Águilas</span><b>2.2 km</b></li>
+      <li><span>Sports World Altavista</span><b>4.0 km</b></li>
+      <li><span>Portal San Ángel</span><b>5.7 km</b></li>
+      <li><span>Centro Santa Fe</span><b>9.5 km</b></li>
+      <li><span>Artz Pedregal</span><b>10.2 km</b></li>
+      <li><span>Perisur</span><b>12.3 km</b></li>
+    </ul>
+    <h3>Zonas y trabajo</h3>
+    <ul class="near">
+      <li><span>Televisa San Ángel</span><b>4.1 km</b></li>
+      <li><span>San Ángel</span><b>5.8 km</b></li>
+    </ul>
+    <h3>Vías de comunicación</h3>
+    <ul class="near">
+      <li><span>Calz. de las Águilas</span><b>2.2 km</b></li>
+      <li><span>Periférico</span><b>4.0 km</b></li>
+      <li><span>Av. Altavista</span><b>4.0 km</b></li>
+      <li><span>Supervía Poniente (Calz. de las Águilas)</span><b>5.9 km</b></li>
+      <li><span>Aeropuerto CDMX</span><b>23.4 km</b></li>
+    </ul>
+    <h3>Naturaleza y deporte</h3>
+    <ul class="near">
+      <li><span>Ciclovía Desierto de los Leones</span><b>230 m a pie</b></li>
+      <li><span>Parque Nacional Desierto de los Leones</span><b>17.7 km</b></li>
+    </ul>
+    <h3>Salud</h3>
+    <ul class="near">
+      <li><span>Hospital Ángeles Pedregal</span><b>9.1 km</b></li>
+    </ul>
+    <p class="note">Distancias por ruta en auto según Google Maps.</p>
   </section>
 
   <section class="req">
