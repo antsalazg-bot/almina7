@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://antsalazg-bot.github.io/almina7/sitemap.xml
